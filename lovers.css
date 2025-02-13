@@ -1,0 +1,298 @@
+body{
+  background-color: rgb(117, 180, 207);
+  transition: background-color 1s;
+}
+
+body.change{
+  background-color: rgb(234, 173, 225);
+}
+
+.maildiv{
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+@media screen and (max-width:768px){
+.maildiv{
+  margin-top: 40%;
+  margin-left: 30%;
+}
+}
+.mailback{
+  height: 100px;
+  width: 190px;
+  background-color:rgb(131, 109, 39);
+  position: absolute;
+  z-index: -1;
+}
+
+.mailleft{
+  width:0px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(231, 193, 68);
+  position: absolute;
+  rotate: 90deg;
+  z-index: 2;
+}
+
+.mailright{
+  width:0px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(231, 193, 68);
+  position: absolute;
+  margin-left: 90px;
+  rotate: -90deg;
+  z-index: 2;
+}
+
+.mailbottom{
+  width:0;
+  height: 0;
+  border-left: 96px solid transparent;
+  border-right: 96px solid transparent;
+  border-bottom: 50px solid rgb(180, 151, 58);
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -2px;
+  z-index: 2;
+}
+
+
+.mailtop{
+  width:0;
+  height: 0;
+  border-left: 96px solid transparent;
+  border-right: 96px solid transparent;
+  border-bottom: 50px solid rgb(180, 151, 58);
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -2px;
+  rotate: 180deg;
+  z-index: 2;
+  transition: rotate 1s, margin-top 1s ease-in-out;
+ }
+
+.mailtop.up{
+  margin-top: -150px;
+}
+
+
+
+
+
+
+
+.openkonvert{
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 2;
+  margin-top: 200px;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-left:50px;
+  font-size: 15px;
+  transition: height 0.4s, width 0.4s, margin-top 0.4s, margin-left 0.4s, font-size 0.4s,
+  backgroun-color 0.4s, color 0.4s;
+}
+
+.openkonvert:hover{
+  height:60px;
+  width: 110px;
+  margin-top: 195px;
+  margin-left:45px;
+  font-size: 18px ;
+  color:rgb(0, 0, 0) ;
+}
+
+
+.mailpaper{
+  height: 80px;
+  width: 145px;
+  background-color: rgb(248, 226, 179);
+  margin-left: 15px ;
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  transition: margin-top 1s;
+  padding-left: 15px;
+}
+
+.mailpaper.up{
+  margin-top: -50px;
+}
+
+.heart{
+  width: 60px;
+  position: absolute;
+  z-index: 2;
+  rotate: 20deg;
+  animation: heart 3s ease-in-out;
+  margin-top: 5px;
+}
+
+
+@keyframes heart{
+  0%{
+    width: 70px;
+  position: absolute;
+  z-index: 2;
+  rotate: 20deg;
+  }
+  50%{
+
+    margin-top: -50px;
+    rotate:-20deg ;
+    margin-left: -20px;
+  }
+
+  100%{
+    margin-top: -100px;
+    rotate: 20deg ;
+    margin-left: -10px;
+  }
+
+}
+
+.heart1{
+  width: 60px;
+  position: absolute;
+  z-index: 2;
+  rotate: 50deg;
+  animation: heart1 4s ease-in-out;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+
+@keyframes heart1{
+  0%{
+    width: 80px;
+  position: absolute;
+  z-index: 2;
+  rotate: 50deg;
+  }
+  50%{
+
+    margin-top: -50px;
+    rotate:-10deg ;
+    margin-left: 90px;
+  }
+
+  100%{
+    margin-top: -100px;
+    rotate: 20deg ;
+    margin-left: 80px;
+  }
+
+}
+
+
+
+.heart2{
+  width: 40px;
+  position: absolute;
+  z-index: 2;
+  rotate: -20deg;
+  animation: heart2 2s ease-in-out;
+  margin-top: 40px;
+  margin-left: 130px;
+}
+
+
+@keyframes heart2{
+  0%{
+    width: 60px;
+  position: absolute;
+  z-index: 2;
+  rotate: 30deg;
+  }
+  50%{
+
+    margin-top: -50px;
+    rotate:-20deg ;
+    margin-left: 120px;
+  }
+
+  100%{
+    margin-top: -100px;
+    rotate: 20deg ;
+    margin-left: 130px;
+  }
+
+}
+
+
+
+.heart3{
+  width: 30px;
+  position: absolute;
+  z-index: 2;
+  rotate: -50deg;
+  animation: heart3 2.5s ease-in-out;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+
+@keyframes heart3{
+  0%{
+    width: 60px;
+  position: absolute;
+  z-index: 2;
+  rotate: 20deg;
+  }
+  50%{
+
+    margin-top: -50px;
+    rotate: 50deg ;
+    margin-left: 30px;
+  }
+
+  100%{
+    margin-top: -100px;
+    rotate: 20deg ;
+    margin-left: 40px;
+  }
+
+}
+
+
+.heart4{
+  width: 70px;
+  position: absolute;
+  z-index: 2;
+  rotate: 40deg;
+  animation: heart4 3.5s ease-in-out;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+
+@keyframes heart4{
+  0%{
+    width: 60px;
+  position: absolute;
+  z-index: 2;
+  rotate: 4deg;
+  }
+  50%{
+
+    margin-top: -50px;
+    rotate: 0deg ;
+    margin-left: 60px;
+  }
+
+  100%{
+    margin-top: -100px;
+    rotate: -20deg ;
+    margin-left: 70px;
+  }
+
+}
